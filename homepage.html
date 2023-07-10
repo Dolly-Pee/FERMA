@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferma-Bridge/Sign-in </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home-page.css">
+
+    <!-- FONT AWESOME LINK -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NavBar SECTION -->
+
+    <nav>
+        <div class="container nav__container row">
+
+            <div class="nav_logo">
+                <img class="logo" src="Assets/ferma____logo.png" alt="">
+            </div>
+
+            <li class="profile-mb">
+                <a href="" class="row profile">
+
+                    <svg fill="#000000" width="50px" height="50px" viewBox="0 0 32 32" id="icon"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="SVGRepo_iconCarrier">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="_inner-path_" data-name="&lt;inner-path&gt;" class="cls-1"
+                                d="M8.0071,24.93A4.9958,4.9958,0,0,1,13,20h6a4.9959,4.9959,0,0,1,4.9929,4.93,11.94,11.94,0,0,1-15.9858,0ZM20.5,12.5A4.5,4.5,0,1,1,16,8,4.5,4.5,0,0,1,20.5,12.5Z" />
+                            <path
+                                d="M26.7489,24.93A13.9893,13.9893,0,1,0,2,16a13.899,13.899,0,0,0,3.2511,8.93l-.02.0166c.07.0845.15.1567.2222.2392.09.1036.1864.2.28.3008.28.3033.5674.5952.87.87.0915.0831.1864.1612.28.2417.32.2759.6484.5372.99.7813.0441.0312.0832.0693.1276.1006v-.0127a13.9011,13.9011,0,0,0,16,0V27.48c.0444-.0313.0835-.0694.1276-.1006.3412-.2441.67-.5054.99-.7813.0936-.08.1885-.1586.28-.2417.3025-.2749.59-.5668.87-.87.0933-.1006.1894-.1972.28-.3008.0719-.0825.1522-.1547.2222-.2392ZM16,8a4.5,4.5,0,1,1-4.5,4.5A4.5,4.5,0,0,1,16,8ZM8.0071,24.93A4.9957,4.9957,0,0,1,13,20h6a4.9958,4.9958,0,0,1,4.9929,4.93,11.94,11.94,0,0,1-15.9858,0Z" />
+                            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1"
+                                width="32" height="32" />
+                        </g>
+                    </svg>
+                    <small>Profile</small>
+                </a>
+            </li>
+
+            <ul class="nav-links__containers">
+                <li class="all-bridges_mb">
+                    <a href="#">
+                        <small>All Bridges</small>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="" class="row new_bridge">
+
+                        <i class="ri-add-fill" style="font-size: 30px;"></i>
+
+                        <small>Add new bridges</small>
+                    </a>
+                </li>
+
+
+                <li class="profile-lg">
+                    <a href="" class="row profile">
+
+                        <svg fill="#000000" width="50px" height="50px" viewBox="0 0 32 32" id="icon"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                            <g id="SVGRepo_iconCarrier">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="_inner-path_" data-name="&lt;inner-path&gt;" class="cls-1"
+                                    d="M8.0071,24.93A4.9958,4.9958,0,0,1,13,20h6a4.9959,4.9959,0,0,1,4.9929,4.93,11.94,11.94,0,0,1-15.9858,0ZM20.5,12.5A4.5,4.5,0,1,1,16,8,4.5,4.5,0,0,1,20.5,12.5Z" />
+                                <path
+                                    d="M26.7489,24.93A13.9893,13.9893,0,1,0,2,16a13.899,13.899,0,0,0,3.2511,8.93l-.02.0166c.07.0845.15.1567.2222.2392.09.1036.1864.2.28.3008.28.3033.5674.5952.87.87.0915.0831.1864.1612.28.2417.32.2759.6484.5372.99.7813.0441.0312.0832.0693.1276.1006v-.0127a13.9011,13.9011,0,0,0,16,0V27.48c.0444-.0313.0835-.0694.1276-.1006.3412-.2441.67-.5054.99-.7813.0936-.08.1885-.1586.28-.2417.3025-.2749.59-.5668.87-.87.0933-.1006.1894-.1972.28-.3008.0719-.0825.1522-.1547.2222-.2392ZM16,8a4.5,4.5,0,1,1-4.5,4.5A4.5,4.5,0,0,1,16,8ZM8.0071,24.93A4.9957,4.9957,0,0,1,13,20h6a4.9958,4.9958,0,0,1,4.9929,4.93,11.94,11.94,0,0,1-15.9858,0Z" />
+                                <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                    class="cls-1" width="32" height="32" />
+                            </g>
+                        </svg>
+                        <small>Profile</small>
+                    </a>
+                </li>
+
+                <li class="log-out_mb">
+                    <a href="" class="log-out row">
+                        <i class="ri-logout-box-r-line" style="font-size: 30px;"></i>
+                        <small>Logout</small>
+                    </a>
+                </li>
+        </div>
+        </ul>
+
+        </div>
+    </nav>
+
+
+    <main class="bridge-section">
+
+        <div class="header">
+            <h1>Nigeria States' Bridges</h1>
+            <p>Number of enteries <strong>256,789+</strong> bridges and counting</p>
+        </div>
+
+        <div class="container states__container">
+
+            <div class="search-bar__container">
+                <input class="search-bar" type="text" placeholder="Search">
+            </div>
+
+            <div class="states-bridge__container">
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Adamawa</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Akwa Ibom</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Anambra</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Bauchi</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Bayelsa</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Benue</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Borno</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Cross River</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Delta</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Ebonyi</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Edo</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Ekiti</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Enugu</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Gomba</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Imo</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Jigawa</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Kaduna</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Kano</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Katsina</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Kebbi</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Kogi</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Kwara</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Lagos</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Nasarawa</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Niger</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Ogun</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Ondo</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+                <div class="state-bridge">
+                    <div class="bridge-count">
+                        <p>23 bridges</p>
+                    </div>
+                    <h3 class="state">Abia</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <small class="footer">&copy; 2018 Federal Road Maintenance Agency. All rights reserved</small>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

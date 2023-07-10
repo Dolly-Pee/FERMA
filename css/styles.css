@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+:root {
+    --container-lg: 80%;
+    --container-md: 88%;
+    --container-sm: 94%;
+
+    --color-bg1: #94C8B7;
+    --color-bg1hsl: hsl(160, 32%, 68%);
+
+
+    --color-bg2: #DFEFEA;
+    --color-bg2hsl: hsl(161, 33%, 91%);
+
+    --color-bg3: #007D53;
+    --color-bg3hsl: hsla(160, 100%, 25%, .6);
+
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --border-radius: 12px;
+
+    --transition: all linear 400ms;
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Assets/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../Assets/Roboto/Roboto-Bold.ttf);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a{
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Roboto-Bold;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+.container {
+    width: var(--container-lg);
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* STAFF SIGN IN PAGE */
+
+.sign-in__container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    padding: 3rem 0;
+}
+
+/* HERO SECTION */
+
+.hero {
+    align-items: flex-start;
+    background: url(../Assets/images/pexels-maarten-van-den-heuvel-4254898.jpg);
+    background-color: var(--color-bg3hsl);
+    background-size: cover;
+    background-position: right center;
+    background-blend-mode: soft-light;
+    border-radius: 30px;
+    padding: 2em;
+}
+
+.hero-sm{
+    display: none;
+}
+
+.logo {
+    width: 200px;
+}
+
+/* FORM SECTION */
+
+.form__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__section div {
+    margin-top: 4.5vw;
+}
+
+.form__section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-bg3);
+    letter-spacing: 1px;
+}
+
+.form__section input,
+.admin-btn {
+    display: block;
+    background-color: var(--color-bg1);
+    margin: .6rem 0 1.5rem;
+    padding: .9rem 1rem;
+    width: 100%;
+    max-width: 325px;
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+}
+.form__container{
+    width: 100%;
+    max-width: 325px;
+}
+
+.form__section input[type='password'] {
+    background: url(../Assets/SVG/eye-off-svgrepo-com.png), var(--color-bg1);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+.form__section input[type='password']::placeholder {
+    font-size: 30px;
+}
+
+::placeholder {
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.sign-in__btn {
+    margin: .75rem 0;
+    background: var(--color-bg3) !important;
+    color: var(--color-white);
+}
+
+.admin-btn {
+    background: var(--color-white) !important;
+    color: var(--color-bg3);
+}
+
+.admin-btn,
+.sign-in__btn {
+    box-shadow: -3px 3px 3px #8f8f8f, 0px 0px 1px #8f8f8f;
+    font-size: 16px;
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER SECTION */
+
+.footer {
+    margin-top: 3.5vw;
+    color: var(--color-bg3);
+}
+
+/* MEDIA QUERY(IPAD) */
+
+@media screen and (max-width:900px) {
+    .container {
+        width: var(--container-md);
+        
+    }
+
+    .sign-in__page {
+        background: url(../Assets/images/pexels-maarten-van-den-heuvel-4254898.jpg);
+        background-color: var(--color-bg3hsl);
+        background-size: cover;
+        background-position: right 5rem center;
+        background-blend-mode: soft-light;
+    }
+
+    .sign-in__container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .form__container {
+        background: var(--color-white);
+        border-radius: var(--border-radius);
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .hero-sm{
+        display: block;
+        align-self: center;
+       width: 325px;
+        margin-bottom: 3rem;
+    }
+
+    .footer{
+        color: var(--color-white);
+        font-size: 12px;
+    }
+}
+
+/* MEDIA QUERY(MOBILE) */
+
+@media screen and (max-width:500px) {
+    .container {
+        width: var(--container-sm);
+        
+    }
+}

@@ -1,0 +1,18 @@
+
+** Staff Sign in Page **
+
+Button color		-	#007D53
+
+Background color	-	White
+
+Form fields		-	#94C8B7
+
+Form field text		-	#DFEFEA
+
+Form field Label	-	#DFEFEA
+
+curve radius 		-	12
+
+footer text		-	"© 2018 Federal Roads Maintenance Agency. All rights reserved"
+
+drop shadow		-	x=-3,	y=3 blur = 6	 
